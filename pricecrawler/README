@@ -1,0 +1,1 @@
+A silly web crawler I wrote using the nokogiri gem to keep track of the price of Alex Ohanian's (Reddit Founder) book "Make Something People Love: Lessons From a Startup Guy". The price was fluctuating from $3 to $9.95, so, I was trying to keep track of the best price without loading the webpage.

@@ -1,0 +1,29 @@
+Constraints:
+
+1 <= N <= 8
+1 <= K <= 5
+
+The first input line gets an N and a K. 
+N = The number of discs
+K = The number of pegs
+
+The second line will describe the radii of the discs and to the keg which it belongs to. The i'th position denotes the radius of the disc and the the number itself describes which Keg it belongs to.
+
+The third line will denote the final configuration. The pattern is similar to the second line which is the initial configuration.
+
+CONSTRUCTOR:
+  Make an array of 'K' stacks. 
+  Push the discs into the stacks.
+
+SOLVING THE PROBLEM:
+
+  Check:
+    done:
+      Returns the output if discs are in expected configuration.
+    partially-correct:
+      Check if in correct position. Those that are not in appropriate position will be moved. 
+  Move:
+    Pop the disc from one stack and push it to the other.
+    Record which stacks are used in the operation.
+    Update the counter.
+    After a single move we return to 'Check'
